@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <!-- Link para o FontAwesome para os ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- Cabeçalho da página com a logo e navegação -->
+      <div id="conteiner-header">
+        <div class="logo">
+          <!-- Logo da página com link -->
+          <a href="">Pichau</a>
+        </div>
+        <nav>
+          <ul>
+            <li id="conta">
+              <!-- Ícone de conta de usuário com texto explicativo -->
+              <a href="">
+                <i class="fa-solid fa-circle-user fa-2xl"></i>
+                <p>
+                  Minha conta <br />
+                  <strong> Entrar / Cadastro </strong>
+                </p>
+              </a>
+            </li>
+
+            <li>
+              <!-- Ícone de atendimento ao cliente -->
+              <a href="">
+                <i class="fa-solid fa-circle-user fa-2xl"></i>
+                <p>
+                  Atendimento
+                  <br />
+                  <strong> Ao Cliente </strong>
+                </p>
+              </a>
+            </li>
+
+            <li>
+              <!-- Ícone de favoritos -->
+              <a href="">
+                <i class="fa-solid fa-heart fa-2xl"></i>
+                <p>
+                  Meus
+                  <br />
+                  <strong> Favoritos </strong>
+                </p>
+              </a>
+            </li>
+
+            <li id="carrinho">
+              <!-- Ícone de carrinho de compras -->
+              <a href="">
+                <button>
+                  <i
+                    class="fa-solid fa-cart-shopping fa-2xl"
+                    id="icone-carrinho"
+                  ></i>
+                  <p>
+                    <strong>CARRINHO </strong> <br />
+                    0 produto
+                  </p>
+                  <i class="fa-solid fa-angle-down" style="color: #ffffff"></i>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Seção de pesquisa -->
+      <div id="pesquisa">
+        <button id="departamento">
+          <!-- Ícone de menu de departamentos -->
+          <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff"></i>
+          <p>
+            ACESSE TODOS OS <br />
+            <strong> DEPARTAMENTO </strong>
+          </p>
+
+          <!-- Setinha indicando mais opções -->
+          <i class="fa-solid fa-greater-than" style="color: #ffffff"></i>
+        </button>
+        <form action="">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Digite o que você procura... "
+          />
+          <button id="busca">
+            <!-- Ícone de lupa para buscar -->
+            <i class="fa-solid fa-magnifying-glass" style="color: #707070"></i>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <!-- Menu lateral com categorias -->
+    <aside>
+      <div class="logo" id="menu-lateral">
+        <a href="">Pichau</a>
+        <button id="close">
+          <!-- Ícone de fechar o menu lateral -->
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <nav>
+        <p>CATEGORIAS</p>
+        <ul>
+          <!-- Lista de categorias do site -->
+          <li>Hardware</li>
+          <li>Periféricos</li>
+          <li>Computadores</li>
+          <li>Kit Upgrade</li>
+          <li>Monitores</li>
+          <li>Cadeiras e Mesas Gamer</li>
+          <li>Eletronicos</li>
+          <li>Notebooks e Portáteis</li>
+          <li>Mochilas</li>
+          <li>Video Game</li>
+          <li>Redes e Wireless</li>
+          <li>Realidade Virtual</li>
+          <li>Casa inteligente</li>
+          <li>Casa e Lazer</li>
+          <li>Openbox</li>
+          <li>Petes</li>
+          <li>Vestuario</li>
+          <li>Redes e Wireless</li>
+          <li>Marcas</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Seção principal -->
+    <main>
+      <!-- Seção do carrossel de produtos -->
+      <section id="carrossel-section">
+        <h1>PODE SER DO SEU INTERESSE</h1>
+        <div>
+          <button id="prev">
+            <i class="fa-solid fa-chevron-left" style="color: #000000"></i>
+          </button>
+          <div id="carrossel-contrainer">
+            <ul class="carrossel">
+              <li class="item">
+                <img src="img/processador.jfif" alt="" />
+
+                <pre>
+Processador Intel Core i9-12900K,
+3.2GHz (5.2GHz Max Turbo), Cache
+30MB, 16 Núcleos, 24 Threads, 
+LGA 1700, Vídeo Integrado -
+BX8071512900K</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+              <li class="item">
+                <img src="img/teclado.jfif" alt="" />
+
+                <pre>
+Teclado Mecânico Gamer KBM! 
+GAMING TG600,Branco, 60% e ABNT2, 
+RGB, Switch Gateron 
+Red- KGTG600BRVR</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+
+              <li class="item">
+                <img src="img/processador.jfif" alt="" />
+
+                <pre>
+Processador Intel Core i9-12900K,
+3.2GHz (5.2GHz Max Turbo), Cache
+30MB, 16 Núcleos, 24 Threads, 
+LGA 1700, Vídeo Integrado -
+BX8071512900K</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+              <li class="item">
+                <img src="img/teclado.jfif" alt="" />
+
+                <pre>
+Teclado Mecânico Gamer KBM! 
+GAMING TG600,Branco, 60% e ABNT2, 
+RGB, Switch Gateron 
+Red- KGTG600BRVR</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+              <li class="item">
+                <img src="img/processador.jfif" alt="" />
+
+                <pre>
+Processador Intel Core i9-12900K,
+3.2GHz (5.2GHz Max Turbo), Cache
+30MB, 16 Núcleos, 24 Threads, 
+LGA 1700, Vídeo Integrado -
+BX8071512900K</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+              <li class="item">
+                <img src="img/teclado.jfif" alt="" />
+
+                <pre>
+teste2 Mecânico Gamer KBM! 
+GAMING TG600,Branco, 60% e ABNT2, 
+RGB, Switch Gateron 
+Red- KGTG600BRVR</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+              <li class="item">
+                <img src="img/processador.jfif" alt="" />
+
+                <pre>
+Processador Intel Core i9-12900K,
+3.2GHz (5.2GHz Max Turbo), Cache
+30MB, 16 Núcleos, 24 Threads, 
+LGA 1700, Vídeo Integrado -
+BX8071512900K</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+              <li class="item">
+                <img src="img/teclado.jfif" alt="" />
+
+                <pre>
+Teclado Mecânico Gamer KBM! 
+GAMING TG600,Branco, 60% e ABNT2, 
+RGB, Switch Gateron 
+Red- KGTG600BRVR</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+
+              <li class="item">
+                <img src="img/processador.jfif" alt="" />
+
+                <pre>
+Processador Intel Core i9-12900K,
+3.2GHz (5.2GHz Max Turbo), Cache
+30MB, 16 Núcleos, 24 Threads, 
+LGA 1700, Vídeo Integrado -
+BX8071512900K</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+              <li class="item">
+                <img src="img/teclado.jfif" alt="" />
+
+                <pre>
+Teclado Mecânico Gamer KBM! 
+GAMING TG600,Branco, 60% e ABNT2, 
+RGB, Switch Gateron 
+Red- KGTG600BRVR</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+              <li class="item">
+                <img src="img/processador.jfif" alt="" />
+
+                <pre>
+Processador Intel Core i9-12900K,
+3.2GHz (5.2GHz Max Turbo), Cache
+30MB, 16 Núcleos, 24 Threads, 
+LGA 1700, Vídeo Integrado -
+BX8071512900K</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+              <li class="item">
+                <img src="img/teclado.jfif" alt="" />
+
+                <pre>
+teste Mecânico Gamer KBM! 
+GAMING TG600,Branco, 60% e ABNT2, 
+RGB, Switch Gateron 
+Red- KGTG600BRVR</pre
+                >
+
+                <h3>R$ 2.379,99</h3>
+              </li>
+            </ul>
+          </div>
+          <button id="next">
+            <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Seção de ofertas em destaque -->
+      <section>
+        <h1>OFERTAS EM DESTAQUE</h1>
+
+        <ul class="ofertas">
+          <li class="item">
+            <img src="img/processador.jfif" alt="" />
+            <pre>
+Processador Intel Core i9-12900K,
+3.2GHz (5.2GHz Max Turbo), Cache
+30MB, 16 Núcleos, 24 Threads, 
+LGA 1700, Vídeo Integrado -
+BX8071512900K</pre
+            >
+            <h3>R$ 2.379,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/teclado.jfif" alt="" />
+            <pre>
+Teclado Mecânico Gamer KBM!
+GAMING TG600, Branco, 60% e ABNT2,
+RGB, Switch Gateron
+Red - KGTG600BRVR</pre
+            >
+            <h3>R$ 379,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/mouse.jfif" alt="" />
+            <pre>
+Mouse Gamer Logitech G502 HERO,
+Sensor HERO 25K, RGB LIGHTSYNC,
+11 Botões Programáveis,
+Preto - 910-005469</pre
+            >
+            <h3>R$ 299,90</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/monitor.jfif" alt="" />
+            <pre>
+Monitor Gamer LG UltraGear 27",
+IPS, 144Hz, 1ms, FreeSync,
+FHD 1920x1080 - 27GL650F-B</pre
+            >
+            <h3>R$ 1.299,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/gabinete.jfif" alt="" />
+            <pre>
+Gabinete Gamer Cooler Master MasterBox Q300L,
+ATX, Preto com Painel Acrílico -
+MCB-Q300L-KANN-S00</pre
+            >
+            <h3>R$ 279,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/headset.jfif" alt="" />
+            <pre>
+Headset Gamer HyperX Cloud Alpha,
+Driver Duplo 50mm, Áudio 7.1,
+Preto e Vermelho - HX-HSCA-RD/AM</pre
+            >
+            <h3>R$ 459,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/placa-mae.jfif" alt="" />
+            <pre>
+Placa-mãe ASUS TUF GAMING B550M-PLUS,
+Socket AM4, DDR4, mATX,
+PCIe 4.0, RGB - 90MB14K0-M0EAY0</pre
+            >
+            <h3>R$ 749,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/ssd.jfif" alt="" />
+            <pre>
+SSD Kingston NV2, 1TB, M.2 NVMe,
+PCIe 4.0 x4, Leitura 3500MB/s,
+Escrita 2100MB/s - SNV2S/1000G</pre
+            >
+            <h3>R$ 349,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/fonte.jfif" alt="" />
+            <pre>
+Fonte Corsair CV550, 80 Plus Bronze,
+550W, PFC Ativo, Cabeamento Fixo -
+CP-9020210-BR</pre
+            >
+            <h3>R$ 289,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/placa-video.jfif" alt="" />
+            <pre>
+Placa de Vídeo NVIDIA GeForce RTX 3060,
+12GB, GDDR6, PCIe 4.0, Dual Fan -
+ZT-A30600H-10M</pre
+            >
+            <h3>R$ 2.699,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/cadeira.jfif" alt="" />
+            <pre>
+Cadeira Gamer ThunderX3 TGC12,
+Couro Sintético, Ajuste de Altura,
+Preto e Vermelho</pre
+            >
+            <h3>R$ 1.099,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/memoria.jfif" alt="" />
+            <pre>
+Memória RAM Kingston Fury Beast,
+8GB, DDR4, 3200MHz, CL16,
+RGB - KF432C16BBA/8</pre
+            >
+            <h3>R$ 229,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/webcam.jfif" alt="" />
+            <pre>
+Webcam Logitech C920 HD Pro,
+Full HD 1080p, Microfone Estéreo,
+Preto - 960-001257</pre
+            >
+            <h3>R$ 449,99</h3>
+          </li>
+
+          <li class="item">
+            <img src="img/cooler.jfif" alt="" />
+            <pre>
+Cooler para Processador Cooler Master Hyper 212,
+LED RGB, Compatível Intel e AMD</pre
+            >
+            <h3>R$ 199,99</h3>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Inclusão do arquivo JavaScript para interatividade -->
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

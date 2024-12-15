@@ -1,0 +1,332 @@
+/* Remove margens e preenchimentos de todos os elementos da página */
+* {
+  margin: 0; /* Remove margens de todos os elementos */
+  padding: 0; /* Remove preenchimento de todos os elementos */
+}
+
+/* Define o fundo da página como uma cor clara */
+body {
+  background-color: #fafafa;
+}
+
+/* Define o estilo do header */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  padding-bottom: 2rem;
+}
+
+/* Estilo do container dentro do header, que organiza o conteúdo */
+#conteiner-header {
+  padding-top: 1rem;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+/* Estilo da seção de pesquisa */
+#pesquisa {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo do departamento no header */
+#departamento {
+  display: flex;
+  height: 4rem;
+  width: 24%;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  background-color: #e90313; /* Cor de fundo vermelha */
+  gap: 1rem;
+  border-radius: 5px;
+  border: 0px;
+  text-align: end;
+}
+
+/* Tamanho e estilo do texto dentro do botão de pesquisa */
+#pesquisa button p strong {
+  font-size: 1.5rem;
+}
+
+/* Estilo do formulário dentro de pesquisa */
+form {
+  width: 100%;
+  margin-left: 1rem;
+}
+
+/* Estilo do input de pesquisa */
+#pesquisa form input {
+  border: 2px solid #ededed;
+  border-radius: 5px;
+  width: 70%;
+  height: 2.5rem;
+}
+
+/* Estilo do link para logo */
+.logo a {
+  color: #e90313; /* Cor do texto do logo */
+  text-decoration: none;
+  font-size: 4rem;
+}
+
+/* Estilo da navegação dentro do header */
+header nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  align-items: center;
+}
+
+/* Estilo dos itens de navegação */
+header nav ul li a {
+  display: flex;
+  text-decoration: none;
+  color: #4d4d4d;
+  gap: 1rem;
+  font-size: 1rem;
+  align-items: center;
+}
+
+/* Define a cor do texto em negrito dentro dos links */
+header nav ul li a strong {
+  color: black;
+}
+
+/* Estilo do botão de navegação */
+header nav ul li a button {
+  width: 12rem;
+  height: 4rem;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #00b139; /* Cor do fundo do botão */
+  color: white;
+}
+
+/* Estilo do texto dentro do botão de navegação */
+header nav ul li a button p {
+  font-size: 1rem;
+}
+
+/* Define a cor do texto em negrito dentro do botão */
+header nav ul li a button p strong {
+  color: white;
+}
+
+/* Estilo do ícone de navegação */
+i {
+  color: #e90313;
+}
+
+/* Estilo do ícone de carrinho de compras */
+#icone-carrinho {
+  color: white;
+}
+
+/* Estilo da barra de pesquisa */
+#busca {
+  width: 3rem;
+  height: 2.5rem;
+}
+
+/* Estilo do menu lateral */
+aside {
+  position: fixed; /* Fixa o menu à esquerda da tela */
+  top: 0;
+  left: 0;
+  width: 14%;
+  height: 100%;
+  padding-left: 1%;
+  background-color: #fafafa;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Sombras para destacar o menu */
+  overflow: auto; /* Permite rolagem caso necessário */
+  z-index: 9999; /* Garante que o menu tenha prioridade sobre outros elementos */
+
+  /* Oculta o menu inicialmente */
+  transform: translateX(-100%); /* Move o menu para fora da tela */
+  opacity: 0; /* Torna o menu invisível */
+  pointer-events: none; /* Desativa as interações */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Animação para a transição */
+}
+
+/* Estilo quando o menu está ativo (exibido) */
+aside.active {
+  transform: translateX(0); /* Move o menu para dentro da tela */
+  opacity: 1; /* Torna o menu visível */
+  pointer-events: auto; /* Permite interações */
+}
+
+/* Estilo da navegação dentro do menu lateral */
+aside nav {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Estilo da lista dentro do menu lateral */
+aside ul {
+  font-size: 1.5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Estilo do container do menu lateral */
+#menu-lateral {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Estilo do botão de fechar o menu lateral */
+#close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+}
+
+/* Estilo do ícone dentro do botão de fechar */
+#close i {
+  color: black;
+}
+
+/* Estilo do main */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+/* Estilo das seções dentro do main */
+section {
+  width: 85%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Estilo dos elementos dentro das seções */
+section div {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo do carrossel */
+#carrossel-contrainer {
+  overflow: hidden;
+  width: 93.5%;
+  max-width: 93.5%;
+  display: flex;
+  list-style: none;
+}
+
+/* Estilo da lista do carrossel */
+.carrossel {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo de cada item do carrossel */
+.item {
+  width: 233px;
+  margin: 10px;
+}
+
+/* Estilo dos botões de navegação do carrossel */
+section div button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #e90313; /* Cor de fundo vermelha */
+}
+
+/* Estilo das ofertas exibidas */
+.ofertas {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Estilos responsivos para telas de tamanho médio (1200px a 760px) */
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  #carrossel-section {
+    display: none; /* Esconde a seção de carrossel */
+  }
+  #conteiner-header {
+    width: 100%;
+    justify-content: space-between;
+  }
+  #conteiner-header li a p {
+    display: none; /* Esconde o texto dentro dos links */
+  }
+  #carrinho {
+    width: 15%;
+  }
+  #carrinho button {
+    background-color: red; /* Muda a cor do botão */
+  }
+  aside {
+    width: 35%;
+  }
+  #departamento p {
+    display: none; /* Esconde o texto dentro do departamento */
+  }
+  #conta {
+    display: none; /* Esconde a seção de conta */
+  }
+}
+
+/* Estilos responsivos para telas pequenas (menor que 760px) */
+@media only screen and (max-width: 760px) {
+  #carrossel-section {
+    display: none; /* Esconde a seção de carrossel */
+  }
+  #conteiner-header {
+    width: 100%;
+    justify-content: space-between;
+  }
+  #conteiner-header ul {
+    gap: 1rem; /* Ajusta o espaçamento entre os itens */
+  }
+  #conteiner-header li a p {
+    display: none; /* Esconde o texto dentro dos links */
+  }
+  #carrinho {
+    width: 15%;
+  }
+  #carrinho button {
+    background-color: red; /* Muda a cor do botão */
+  }
+  aside {
+    width: 45%;
+  }
+  #menu-lateral a {
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+  }
+  #departamento p {
+    display: none; /* Esconde o texto dentro do departamento */
+  }
+  #conta {
+    display: none; /* Esconde a seção de conta */
+  }
+}
